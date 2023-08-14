@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "employees": [
+    {
+      "id": 3,
+      "companyName": "Brinn",
+      "Address": "Jephcote",
+      "email": "bjephcote0@archive.org",
+      "Tell": "0774477984"
+    },
+    {
+      "companyName": "Brinn",
+      "Address": "Jephcote",
+      "email": "bjephcote0@archive.org",
+      "Tell": "0774477984",
+      "id": 4
+    }
+  ],
+  "Requorders": [
+    {
+      "companyName": "atlas",
+      "Items": "s",
+      "email": "s",
+      "Tell": "33",
+      "id": 6,
+      "Date": ""
+    },
+    {
+      "companyName": "atlas",
+      "Items": "s",
+      "email": "s",
+      "Tell": "33",
+      "id": 6,
+      "Date": ""
+    }
+  ]
+}

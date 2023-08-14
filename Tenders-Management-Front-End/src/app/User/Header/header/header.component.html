@@ -1,0 +1,22 @@
+<nav class="navbar">
+
+    <div class="date">
+        <app-digitalclock></app-digitalclock>
+    </div>
+
+    <div class="name">
+        <span> {{name}}</span>
+    </div>
+
+    <div class="profile-logo dropdown">
+        <a href="#" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="/assets/imgs/user.png" alt="" width="62" height="62" class="rounded-circle me-5">
+        </a>
+        <ul class="dropdown-menu dropdown-menu-dark text-small shadow" >
+         
+          <li><Button (click)="logout()"><a class="dropdown-item">LogOut</a></Button></li>
+        </ul>
+    </div>
+
+</nav>
+

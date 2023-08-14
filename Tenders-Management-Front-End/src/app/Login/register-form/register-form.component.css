@@ -1,0 +1,525 @@
+body {
+  /* color: white; */
+  height: 100%;
+    background: url('/assets/imgs/userReg.jpg') no-repeat;
+}
+
+.registration-form {
+  /* background-color: #ffffff; */
+  /* max-width: 500px; */
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.btn-register {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.wrapper{
+  position: relative;
+  width: 650px;
+  height: 100%;
+  border: 2px solid;
+  background: transparent;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+}
+
+.wrapper .form-register{
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  
+}
+
+.form-group label{
+  color: white;
+ 
+}
+
+.form-group small
+{
+  font-weight: 900;
+  font-size: 15px;
+ 
+}
+
+.form-control{
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  border-bottom: 1px solid #ced4da;
+}
+
+button{
+  width: 200px;
+  margin-left: 190px;
+  font-weight: 700;
+  background-color: #007bff;
+}
+
+p a{
+  font-weight: 700;
+  color: #eb1e63;
+}
+
+
+/* body{
+
+    color: white;
+    background: url('/assets/imgs/RegBack.jpg') no-repeat;
+
+}
+
+.label{
+  text-decoration: double;
+  font-size: 30px;
+}
+
+.wrapper{
+    position: relative;
+    width: 650px;
+    height: 900px;
+    border: 2px solid;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+
+}
+
+.wrapper .form-register{
+    width: 100%;
+    padding: 40px;
+    
+  }
+
+  .form-register h2{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 40px;
+  }
+
+  .input-box{
+    width: 100%;
+    height: 50%;
+    border-bottom: 2px solid;
+    margin: 30px 0;
+    padding-top: 30px;
+    
+      }
+
+      .input-box label{
+        position: absolute;
+
+        left: 45px;
+        transform: translateY(-100%);
+        font-weight: 300;
+      }
+    
+      .input-box input{
+        width: 430px;
+        height: 25px;
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 0 35px 0 5px;
+      }
+
+      .input-box span{
+        position: absolute;
+        right: 45px;
+        font-size: 18px;
+      }   
+      
+      .agreeform{
+        width: 100%;
+
+        right: 35px;
+        font-weight: 500;
+        font-size: 1em;
+
+        font-size: 1em;
+        align-items: center;
+      }
+    .agreeform input{
+            position: absolute;
+
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            accent-color: white;
+    }
+
+    .agreeform p{
+
+        margin-left: 26px;
+
+    }
+
+
+      .reg button{
+        width: 100%;
+        height: 45px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1em;
+        color: black;
+        background-color: rgb(253, 239, 239);
+        font-weight: 500;
+        margin-top: 35px;
+      }
+
+      .reg :hover{
+        background-color: #3a4b53;
+        color: white;
+      }
+
+      .register{
+        font-size: 1em;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 40px ;
+      }
+    
+      .register p button{
+        text-decoration: none;
+        color: rgb(170, 152, 238);
+        font-weight: 900;
+        border: none solid;
+        background: transparent;
+        margin-top: -2px;
+        margin-left: -2px;
+        height: 2px;
+        font-size: 1em;
+      }
+    
+      .register p button:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: white;
+      }
+
+
+td{
+  width: 490px;
+}
+
+
+      table .tel input{
+        width: 89%;
+        height: 25px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        outline: none;
+        color: white;
+      }
+
+      td input{
+        width: 100%;
+        height: 25px;
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+        outline: none;
+        color: white;
+      } */
+
+
+      /* //////////////////// */
+
+/* 
+      body{
+
+        color: white;
+        background: url('/assets/imgs/RegBack.jpg') no-repeat;
+    
+    }
+    
+    
+    .wrapper{
+        position: relative;
+        width: 510px;
+        height: 650px;
+        border: 2px solid;
+        background: transparent;
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    
+    }
+
+      .form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 500px;
+    
+        backdrop-filter: blur(20px);
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+      }
+      
+      .title {
+        font-size: 28px;
+        color: rgb(254, 254, 255);
+        font-weight: 600;
+        letter-spacing: -1px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding-left: 50px;
+      }
+      
+      
+      .title::before {
+        width: 18px;
+        height: 18px;
+        background-color: rgb(241, 241, 241);
+      }
+      
+      .title::after {
+        width: 18px;
+        height: 18px;
+        animation: pulse 1s linear infinite;
+      }
+      
+      .register{
+        font-size: 1em;
+        text-align: center;
+        font-weight: 500;
+        margin-top: 40px ;
+      }
+    
+      .register p button{
+        text-decoration: none;
+        color: rgb(170, 152, 238);
+        font-weight: 900;
+        border: none solid;
+        background: transparent;
+        margin-top: -2px;
+        margin-left: -2px;
+        height: 2px;
+        font-size: 1em;
+      }
+    
+      .register p button:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        color: white;
+      }
+      .signin {
+        text-align: center;
+      }
+      
+      .signin a {
+        color: royalblue;
+      }
+      
+      .signin a:hover {
+        text-decoration: underline royalblue;
+      }
+      .icon-btn {
+        width: 50px;
+        height: 50px;
+        border: 1px solid #cdcdcd;
+        background: white;
+        border-radius: 25px;
+        overflow: hidden;
+        position: relative;
+        transition: width 0.2s ease-in-out;
+        font-weight: 500;
+        font-family: inherit;
+      }
+      
+      .add-btn:hover {
+        width: 120px;
+      }
+      
+      .add-btn::before,
+      .add-btn::after {
+        transition: width 0.2s ease-in-out, border-radius 0.2s ease-in-out;
+        content: "";
+        position: absolute;
+        height: 4px;
+        width: 10px;
+        top: calc(50% - 2px);
+        background: seagreen;
+      }
+      
+      .add-btn::after {
+        right: 14px;
+        overflow: hidden;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+      
+      .add-btn::before {
+        left: 14px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+      
+      .icon-btn:focus {
+        outline: none;
+      }
+      
+      .btn-txt {
+        opacity: 0;
+        transition: opacity 0.2s;
+      }
+      
+      .add-btn:hover::before,
+      .add-btn:hover::after {
+        width: 4px;
+        border-radius: 2px;
+      }
+      
+      .add-btn:hover .btn-txt {
+        opacity: 1;
+      }
+      
+      .add-icon::after,
+      .add-icon::before {
+        transition: all 0.2s ease-in-out;
+        content: "";
+        position: absolute;
+        height: 20px;
+        width: 2px;
+        top: calc(50% - 10px);
+        background: seagreen;
+        overflow: hidden;
+      }
+      
+      .add-icon::before {
+        left: 22px;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+      }
+      
+      .add-icon::after {
+        right: 22px;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+      }
+      
+      .add-btn:hover .add-icon::before {
+        left: 15px;
+        height: 4px;
+        top: calc(50% - 2px);
+      }
+      
+      .add-btn:hover .add-icon::after {
+        right: 15px;
+        height: 4px;
+        top: calc(50% - 2px);
+      }
+      .flex {
+        display: flex;
+        width: 100%;
+        gap: 25px;
+      }
+
+      .flex .input{
+          width: 170px;
+ 
+      }
+      
+      .form label {
+        position: relative;
+      }
+      
+      .form label .input {
+        width: 100%;
+        padding: 10px 10px 10px 10px;
+        outline: 0;
+        border: 1px solid rgba(105, 105, 105, 0.397);
+        border-radius: 10px;
+      }
+      
+      .form label .input + span {
+        position: absolute;
+        left: 10px;
+        top: 15px;
+        color: grey;
+        font-size: 0.9em;
+        cursor: text;
+        transition: 0.3s ease;
+      }
+      
+      .form label .input:placeholder-shown + span {
+        top: 15px;
+        font-size: 0.9em;
+      }
+      
+      .form label .input:focus + span,.form label .input:valid + span {
+        top: 30px;
+        font-size: 0.7em;
+        font-weight: 600;
+      }
+      
+      .form label .input:valid + span {
+        color: green;
+      }
+      
+      .submit {
+        border: none;
+        outline: none;
+        background-color: royalblue;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 16px;
+        transform: .3s ease;
+      }
+      
+      .submit:hover {
+        background-color: rgb(56, 90, 194);
+      }
+      
+      @keyframes pulse {
+        from {
+          transform: scale(0.9);
+          opacity: 1;
+        }
+      
+        to {
+          transform: scale(1.8);
+          opacity: 0;
+        }
+      } */

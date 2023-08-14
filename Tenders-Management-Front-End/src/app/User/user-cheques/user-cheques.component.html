@@ -1,0 +1,32 @@
+<div class="container">
+
+    <div class="row">
+        <h3 class="text-center fw-bold mt-5">Send Cheque</h3>
+        <table class="table table-borderless ms-3">
+            <tbody>
+                <tr>
+                    <th>Order ID</th>
+                    <td>{{data.orderID}}</td>
+                </tr>
+    
+                <tr>
+                    <th>Total Outstand</th>
+                    <td>Rs.{{data.totAmount}}</td>
+                </tr>
+    
+                <tr>
+                    <th>Cheque ID</th>
+                    <td>
+                        <input type="text" class="form-control"  aria-describedby="basic-addon1" required [(ngModel)]="cid">
+                    </td>
+                </tr>
+            </tbody>
+          </table>
+    </div>
+    <div class="row">
+        <button type="submit" class="btn bg-primary text-white" mat-raised-button (click)="sendCheque()">Send</button>
+    </div>
+    
+
+
+</div>

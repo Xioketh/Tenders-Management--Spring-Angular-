@@ -1,0 +1,67 @@
+
+
+<body>
+    <div class="content">
+        <!-- <div mat-dialog-title class="title"> -->
+            <h1>Send Quotation
+            <!-- <img src="/assets/imgs/place_order1.png" alt=""> -->
+        </h1>
+        <!-- </div> -->
+    
+        <table >
+            <tr>
+                <th>Request ID:</th>
+                <td>{{data.id}}</td>
+            </tr>
+    
+            <tr>
+                <th>Company Name:</th>
+                <td>{{data.companyName}}</td>
+            </tr>
+    
+            <tr>
+                <th>Reply Date Before:</th>
+                <td>{{data.date}}</td>
+            </tr>
+<!--     
+            <tr>
+                <td>Items</td>
+                <td *ngFor="let x of itemz">{{x}}</td>
+            </tr>
+            <tr>
+                <td>Quantity</td>
+                <td *ngFor="let x of qtyz">{{x}}</td>
+            </tr> -->
+        </table>
+
+
+        <table class="styled-table">
+            <tr>
+                <th>#</th>
+                <th>Items</th>
+                <th>Quantity</th>
+                <th>Price for all Qty</th>
+                <!-- <td *ngFor="let x of itemz">{{x}}</td> -->
+            </tr>
+            <tbody class="table-group-divider">
+                <tr *ngFor="let x of itemz; let y =index">
+                    <td >{{y+1}}</td>
+                    <td>{{x.item}}</td>
+                    <td >{{x.qty}}</td>
+                    <td>
+                        <input type="text" class="form-control" [(ngModel)]="quatation[y]" required appNumericInput>
+                        <div *ngIf="!quatation[y]" class="error-message text-danger"></div>
+                      </td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+       
+
+        <div mat-dialog-actions class="action">
+            <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+            <button mat-raised-button color="primary" (click)="send()">Send</button>
+        </div>
+    </div>
+</body>

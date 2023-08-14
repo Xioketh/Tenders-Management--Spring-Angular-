@@ -1,0 +1,62 @@
+<body>
+    <div class="content">
+        <h1>Order Details</h1>
+        <table>
+            <tr>
+                <td>Order ID:<td>
+                <th>{{data.orderId}}</th>
+            </tr>
+            <tr>
+                <td>Request ID:<td>
+                    <th>{{orders.id}}</th>
+            </tr>
+        
+            <tr>
+                <td>Company Name:</td>
+                <th>{{orders.companyName}}</th>
+            </tr>
+        
+            <tr>
+                <td>Reply Date Before:<td>
+                    <th>{{orders.date}}</th>
+            </tr>
+
+            <tr>
+                <td>Total Order Amount:<td>
+                <th>Rs.{{data.totAmount}}</th>
+            </tr>
+        
+        </table>
+        
+        <table class="styled-table">
+            <tr>
+                <th>#</th>
+                <th>Items</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <!-- <td *ngFor="let x of itemz">{{x}}</td> -->
+            </tr>
+            <tbody class="table-group-divider">
+                <tr *ngFor="let x of items; let y =index">
+                    <td >{{y+1}}</td>
+                    <td>{{x.item}}</td>
+                    <td >{{x.qty}}</td>
+                    <td >{{x.price}}</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        
+        <div mat-dialog-actions class="action">
+            <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+            <!-- <button mat-raised-button color="primary" (click)="send()">Deliver Goods</button> -->
+        </div>
+    </div>
+</body>
+   
+
+
+
+
+

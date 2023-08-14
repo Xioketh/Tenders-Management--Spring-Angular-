@@ -1,0 +1,51 @@
+.dropdown-menu{
+    width: 30px;
+}
+
+nav{
+    position: relative;
+    height:5.5rem;
+    width: 100%;
+    background: #263238;
+    /* position: fixed; */
+}
+
+
+.date{
+    /* border: 2px; */
+    position: absolute;
+    right: 350px;
+}
+
+.name{
+    position: absolute;
+    right: 160px;
+    max-width: 270px;
+    /* border-left: 2px solid white; */
+}
+
+.name{
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+}
+
+.name span{
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(241, 207, 179);
+}
+
+.profile-logo{
+    position: absolute;
+    right: 5px;
+    padding: 30px;
+}
+
+Button{
+    border: none;
+    background: none;
+    
+}

@@ -1,0 +1,15 @@
+.digitalClock{
+    /* display: flex; */
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, serif;
+}
+
+.digitalTime{
+    font-size: 18px;
+    display: flex;
+}
+
+.dayTitle{
+    display: inline;
+}

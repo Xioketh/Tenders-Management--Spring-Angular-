@@ -1,0 +1,317 @@
+body{
+    /* background-color: #317a43; */
+    color: white;
+   
+    /* background-color: #273238; */
+    height: 100%;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    justify-content: space-between;
+    display: flex;
+    z-index: 99;
+    align-items: center;
+    background-color: #273238;
+}
+
+.navi a{
+    margin-left: 0px;
+    margin-right: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bolder;
+    color: beige;
+}
+
+
+
+header h1{
+    margin-top: 35px;
+    padding-left:30px;
+    font-weight: bolder;
+    color: beige;
+    margin-left: 700px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.btn {
+    font-size: 17px;
+    background: transparent;
+    border: none;
+    padding: 1em 1.5em;
+    color: #ffedd3;
+    text-transform: uppercase;
+    position: relative;
+    transition: .5s ease;
+  }
+  
+  .btn::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0;
+    background-color: #f3d264;
+    transition: .5s ease;
+  }
+  
+  .btn:hover {
+    color: #1e1e2b;
+    transition-delay: .5s;
+  }
+  
+  .btn:hover::before {
+    width: 100%;
+  }
+  
+  .btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    background-color: #f3d264;
+    transition: .4s ease;
+    z-index: -1;
+  }
+  
+  .btn:hover::after {
+    height: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+  }
+
+  .wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 550px;
+    transform: translate(-50%, -50%);
+    border: 2px solid;
+    background: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wrapper .form-login{
+    width: 100%;
+    padding: 40px;
+    
+  }
+
+  .form-login h2{
+    text-align: center;
+    font-size: 2em;
+    padding-bottom: 40px;
+    /* margin-bottom: 10px; */
+  }
+
+  .input-box{
+width: 100%;
+height: 50%;
+border-bottom: 2px solid;
+margin: 30px 0;
+padding-top: 30px;
+
+  }
+
+  .input-box label{
+    position: absolute;
+    /* top: 5%; */
+    left: 45px;
+    transform: translateY(-200%);
+    font-weight: 300;
+  }
+
+  .input-box input{
+    width: 430px;
+    height: 25px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0 35px 0 5px;
+  }
+
+  .input-box span{
+    position: absolute;
+    right: 45px;
+    font-size: 18px;
+  }
+
+  .form-login label{
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  .forgetPswrd{
+    position: absolute;
+    right: 35px;
+    font-weight: 500;
+    font-size: 1em;
+    
+  }
+
+  .forgetPswrd a{
+    color: white;
+    text-decoration: none;
+  }
+
+  .forgetPswrd a:hover{
+    text-decoration: underline;
+  }
+
+  .log button{
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    background-color: rgb(253, 239, 239);
+    font-weight: 500;
+    margin-top: 35px;
+  }
+
+  .log :hover{
+    background-color: #3a4b53;
+    color: white;
+  }
+
+
+  .register{
+    font-size: 1em;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 40px ;
+  }
+
+  .register p a{
+    text-decoration: none;
+    color: rgb(170, 152, 238);
+    font-weight: 900;
+  }
+
+  .register p a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: white;
+  }
+
+
+  input .ng-invalid{
+    background-color:red;
+  }
+
+
+  .row{
+    margin-left: 0px;
+    height: 2500px;
+    width: 100%;
+    /* background-color: #1e1e2b; */
+    background: url('/assets/imgs/background31.jpg') no-repeat;
+  }
+
+  .container{
+    
+  }
+
+  .aboutus{
+    position: absolute;
+    top:800px;
+    width: 1500px;
+    background: transparent;
+    display: flex;
+  }
+
+  .aboutus-code{
+    position: absolute;
+    top:970px;
+    width: 1500px;
+    height: 500px;
+    background: transparent;
+    /* border-radius: 20px; */
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    /* background-color: black; */
+    /* background: url('/assets/imgs/background31.jpg') no-repeat; */
+   
+  }
+
+  .aboutus-code h1{
+    height: 100px;
+    width: 300px;
+    position: absolute;
+    margin: 50px;
+    margin-left: 650px;
+    font-size: 28px;
+    color: #f1dda1;
+    font-weight: 1000;
+
+  }
+  .aboutus-code .note{
+    margin: 50px;
+    color: #fcf7f7;
+    position: absolute;
+    top: 80px;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  .contactus{
+    position: absolute;
+    top:1600px;
+    background: transparent;
+    display: flex;
+  }
+
+  .contactus-code{
+    position: absolute;
+    top:1700px;
+    width: 550px;
+    height: 300px;
+    background: transparent;
+    /* border-radius: 20px; */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+  }
+
+  .contactus-code h1{
+    height: 100px;
+    width: 350px;
+    position: absolute;
+    margin: 50px;
+    margin-left: 200px;
+    font-size: 28px;
+    color: #f1dda1;
+    font-weight: 1000;
+
+  }
+  .contactus-code .note{
+    margin: 50px;
+    color: #fcf7f7;
+    position: absolute;
+    top: 80px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: 50px;
+  }

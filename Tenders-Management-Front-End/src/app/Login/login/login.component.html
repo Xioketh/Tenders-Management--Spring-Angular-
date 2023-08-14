@@ -1,0 +1,120 @@
+<header>
+    <h1>WINO TRADING (PVT) LIMITED</h1>
+
+    <nav class="navi">
+        <a href="#aboutus"><button class="btn">
+            About US
+        </button></a>
+
+        <a href="#contactus">
+            <button class="btn">
+                Contact Us
+            </button>
+        </a>
+        <a href="#login" >
+            <button class="btn">
+                Log In
+            </button>
+        </a>
+    </nav>
+</header>
+
+<body>
+
+    <div class="row" id="login">
+        <div class="wrapper" >
+            <div class="form-login">
+                <h2>Login</h2>
+                <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+                    <div class="input-box">
+                        <span class="fa-solid fa-envelope"></span>
+                        <input type="text" formControlName="userName" [(ngModel)]="inputmail">
+                        <label>User Name</label>  
+                    </div>
+        
+                    <div class="input-box">
+                        <span class="fa-solid fa-lock"></span>
+                        <input type="password" formControlName="userPassword" [(ngModel)]="inputValue">
+                        <label>Password</label>
+                        
+                    </div>
+    
+                    <div class="forgetPswrd">
+                        <a (click)="forgotPasswordForm()">Forget Password?</a>
+                    </div>
+    
+                    <div class="log">
+                        <button type="submit">LogIn</button>
+                    </div>
+    
+                    <div class="register">
+                        <p>Don't Have Account?
+                        <a (click)="registerForm()">Register Now!</a>
+                    </p>
+                    </div>
+                </form>
+            </div>
+
+        <div id="aboutus" class="aboutus">
+      
+        </div>
+
+        <div  class="aboutus-code ">
+
+                <h1 class="">
+                    About Us
+                </h1>
+                <div class="note">
+                    <p>
+                     Welcome to Wino Trading private Limited , your gateway to unparalleled success in the competitive tendering landscape. With our expertise and unwavering commitment to quality, we empower businesses to craft winning proposals and secure lucrative contracts. 
+                    </p> 
+                    <p>
+                        Our comprehensive services encompass strategic bid management, meticulous proposal development, and efficient document management. With a focus on precision and timeliness, we ensure projects are executed seamlessly, impressing clients and strengthening your reputation. Join us at Tenders Management Shop, and let our exceptional services pave the way for your triumph in the world of tenders. Experience the difference and unlock your full potential today.
+                    </p>
+                 </div>
+        </div>
+
+        <div id="contactus" class="contactus">
+    
+        </div>
+
+        <div class="contactus-code">
+            <h1 class="">
+                Contact Us
+            </h1>
+            <div class="note">
+            
+                 <table>
+                <tr>
+                    <th>
+                        <p>Telephone No</p>
+                    </th>
+                    <th>
+                        <p class="ms-3">:0774477984</p>
+                    </th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <p>Email</p>
+                    </th>
+                    <th>
+                        <p class="ms-3">:winoTrading@gmail.com</p>
+                        
+                    </th>
+                </tr>
+                
+                 </table>
+             </div>
+            
+        </div>
+        </div> 
+    </div>  
+</body>
+
+
+<router-outlet></router-outlet>
+<!-- <app-admin-main></app-admin-main> -->
+   
+
+

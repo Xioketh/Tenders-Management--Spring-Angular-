@@ -1,0 +1,37 @@
+<div mat-dialog-title>
+    <h1>Supplier Form</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onFormSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Company Name</mat-label>
+                <input matInput type="text" formControlName="name">
+                <small *ngIf="empForm.controls['name'].dirty && empForm.hasError('required', 'name')" class="text-danger">*Company name is Reqired</small>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <input matInput  formControlName="address">
+                <small *ngIf="empForm.controls['address'].dirty && empForm.hasError('required', 'address')" class="text-danger">*Address is Reqired</small>
+            </mat-form-field>
+        </div>
+
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email"  formControlName="email">
+                <small *ngIf="empForm.controls['email'].dirty && empForm.hasError('required', 'email')" class="text-danger">*Email is Reqired</small>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Phone No</mat-label>
+                <input matInput type="text"  formControlName="tell">
+                <small *ngIf="empForm.controls['tell'].dirty && empForm.hasError('required', 'tell')" class="text-danger">*Tell No is Reqired</small>
+            </mat-form-field>
+        </div>
+    </div>
+    
+    <div mat-dialog-actions class="action">
+        <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+        <button mat-raised-button color="primary" type="submit">{{data ? 'Update': 'Save'}}</button>
+    </div>
+</form>

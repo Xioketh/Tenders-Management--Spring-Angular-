@@ -1,0 +1,60 @@
+
+
+<body>
+    <div class="content">
+        <!-- <div mat-dialog-title class="title"> -->
+            <h1>Request Details
+            <!-- <img src="/assets/imgs/place_order1.png" alt=""> -->
+        </h1>
+
+    
+        <table >
+            <tr>
+                <th>Request ID:</th>
+                <td>{{data.id}}</td>
+            </tr>
+    
+            <tr>
+                <th>Company Name:</th>
+                <td>{{data.companyName}}</td>
+            </tr>
+    
+            <tr>
+                <th>Email:</th>
+                <td>{{data.emailID}}</td>
+            </tr>
+            <tr>
+                <th>Reply Date Before:</th>
+                <td>{{data.date}}</td>
+            </tr>
+
+        </table>
+
+
+        <table class="styled-table">
+            <tr>
+                <th>#</th>
+                <th>Items</th>
+                <th>Quantity</th>
+            </tr>
+            <tbody class="table-group-divider">
+                <tr *ngFor="let x of itemz; let y =index">
+                    <td >{{y+1}}</td>
+                    <td>{{x.item}}</td>
+                    <td >{{x.qty}}</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+
+       
+
+        <div mat-dialog-actions class="action">
+            <button mat-raised-button type="button" [mat-dialog-close]="false">Cancel</button>
+            <button mat-raised-button color="primary" (click)="sendQutation(data)">Send</button>
+        </div>
+    </div>
+</body>
+
+

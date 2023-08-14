@@ -1,0 +1,22 @@
+.container{
+    width: 350px;
+    height: 300px;
+    border-radius: 100px;
+}
+
+.table{
+    width: 300px;
+}
+
+.form-control{
+    width: 130px;
+    height: 30px;
+}
+
+.btn{
+
+    margin-left: 100px;
+    /* margin-right: 60px; */
+
+    width: 100px;
+}

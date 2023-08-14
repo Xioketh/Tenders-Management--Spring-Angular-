@@ -1,0 +1,66 @@
+
+                    <form [formGroup]="registerForm">
+
+
+                        <div class="row">
+
+                            <div class="col-4 ms-5 mt-5 border border-2">
+
+                                <div class="row text-center mt-4">
+                                    <h2>
+                                        Change Password
+                                    </h2>
+                                </div>
+
+                                <div class="row m-3">
+                                    <div class="form-group">
+                                        <label for="password">Password</label>
+                                        <input formControlName="userPassword" type="password" class="form-control" id="password" required>
+                                        <small *ngIf="registerForm.controls['userPassword'].dirty && registerForm.hasError('required', 'userPassword')" class="text-danger">*Password is Reqired</small>
+                                    </div>
+                                </div>
+                                <div class="row m-3">
+                                    <div class="form-group">
+                                        <label for="confirmPassword">Confirm Password</label>
+                                        <input formControlName="cPassword" type="password" class="form-control" id="confirmPassword" required>
+                                        <small *ngIf="registerForm.controls['cPassword'].dirty && registerForm.hasError('required', 'cPassword')" class="text-danger">*Confirm Password is Reqired</small>
+                                    </div>
+                                </div>
+
+                                <div class="row m-3" *ngIf="showAdditionalInput">
+                                    <!-- <div class="form-group">
+                                      <label for="additionalField">Verify Code</label>
+                                      <input type="text" class="form-control" id="additionalField">
+                                    </div> -->
+                                    <form class="form" [formGroup]="verify">
+                                        <div class="info">
+                                            <span class="title">OTP Verification</span>
+                                          <p class="description">Please enter the code we have sent you. </p>
+                                             </div>
+                                          <div class="inputs">
+                                          <input formControlName="one" type="tel" maxlength="1">
+                                          <input formControlName="two" type="tel" maxlength="1">
+                                          <input formControlName="three" type="tel" maxlength="1">
+                                          <input formControlName="four" type="tel" maxlength="1">
+                                        </div>
+                                      </form>
+                                </div>
+
+                                <div class="row m-3" *ngIf="!showAdditionalInput">
+                                    <button type="submit" class="btn bg-success fw-bold text-white" (click)="onSubmit()">Send Code</button>
+                                </div>
+                                <div class="row m-3" *ngIf="showAdditionalInput">
+                                    <button type="submit" class="btn bg-primary fw-bold text-white mt-4" (click)="onVerify()">Update</button>
+                                </div>
+
+                            </div>
+                            <div class="col-6">
+
+                                <div class="img1">
+                                    <img src="assets/imgs/set.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+ 
+                  
+                </form>

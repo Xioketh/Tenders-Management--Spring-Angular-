@@ -1,0 +1,91 @@
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed':''">
+    <div class="logo-container">
+
+        <!-- <button class="logo" (click)="toggleCollapse()">W</button> -->
+        
+        <div class="logo-text" *ngIf="collapsed">Wino Trading</div>
+        
+        <!-- <button class=" btn-close bg-light" *ngIf="collapsed" (click)="closeSidenav()"> -->
+            <!-- <i class="fal fa-solid close-icon"></i> -->
+        <!-- </button> -->
+
+    </div>
+    <ul class="sidenav-nav">
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="Uhome" >
+                <i class="sidenav-link-icon fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+        </li>
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLinkActive="active" routerLink="Uorder/RequestOrder">
+                <i class="sidenav-link-icon fa-solid fa-cart-plus"></i>
+                <span>Request Order</span>
+            </a>
+        </li>
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLinkActive="active"  routerLink="RecivedQutations">
+                <i class="sidenav-link-icon fa-sharp fa-solid fa-file-invoice"></i>
+                <span>Recieved Quatations</span>
+            </a>
+        </li>
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link"  routerLinkActive="active" routerLink="Uorder/MyOrders">
+                <i class="sidenav-link-icon fa-solid fa-box"></i>
+                <span>My Orders</span>
+            </a>
+        </li>
+        
+   
+
+      
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLinkActive="active" routerLink="Ucheques">
+                <i class="sidenav-link-icon fa-solid fa-money-check"></i>
+                <span>Cheque</span>
+            </a>
+        </li>
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link"  routerLink="Uoutstanding" routerLinkActive="active">
+                <i class="sidenav-link-icon fa-solid fa-money-bills"></i>
+                <span>Outstanding</span>
+            </a>
+        </li>
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="Usettings" routerLinkActive="active">
+                <i class="sidenav-link-icon fa-solid fa-gear"></i>
+                <!-- <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span> -->
+                <span>Settings</span>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+<!-- <div *ngIf="bool; else elseBlock">
+    <a class="sidenav-nav-link" [routerLink]="[rlink]"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}"
+            >
+            </a>
+</div>
+
+<ng-template #elseBlock>
+    <div *ngFor="let data of navData">
+<a class="sidenav-nav-link" [routerLink]="[data.routerLink]"
+                routerLinkActive="active"
+                [routerLinkActiveOptions]="{exact:true}"
+            >
+                <i class="sidenav-link-icon" [class]="data.icon"></i>
+                <span class="sidenav-link-text" *ngIf="collapsed">{{data.label}}</span>
+            </a>
+    </div>
+    
+</ng-template> -->

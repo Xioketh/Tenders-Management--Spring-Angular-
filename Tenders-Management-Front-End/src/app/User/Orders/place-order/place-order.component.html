@@ -1,0 +1,119 @@
+<!-- <app-user-side-nav [rlink]="rLink"></app-user-side-nav> -->
+
+<div class="card">
+    <div class="card-header">
+    <span class="topic mt-3">
+        Request Your Order
+        <br>
+            ID No: {{lastId}}
+    </span>
+        <ul>
+            <li> 
+                <button mat-raised-button type="button" class="reqBut me-5">
+                    <a routerLink="RequestedOrder" class="request">Requested Orders</a>
+                </button>
+            </li>
+        </ul>
+    
+    </div>
+
+    <div class="card-body p-4">
+        <section>
+            <form (ngSubmit)="onSubmit()">
+
+
+                <div class="row ">
+                    <div class="col-5 p-5">
+                        <div class="row">
+                            <h3 class="fw-bold m-0 p-0">Company Name:</h3>
+                            <h4 class="ms-4">{{cname}}</h4>
+                        </div>
+                        <div class="row">
+                            <h3 class="fw-bold m-0 p-0">Email ID:</h3>
+                            <h4 class="ms-4">{{email}}</h4>
+                        </div>
+                        <div class="row">
+                            <h3 class="fw-bold m-0 p-0">Mobile No:</h3>
+                            <h4 class="ms-4">{{tel}}</h4>
+                        </div>
+                        <div class="img1 row mt-4">
+                            <img src="assets/imgs/placeOrder101.png" alt="">
+
+                        </div>
+                    </div>
+    
+                    <div class="col-6 mt-5 p-5 border border-2">
+                        <div class="row">
+                            <div class="row">
+                                    
+                            </div>
+                        <form [formGroup]="userForm">
+                            <h3 for="name" class="form-label fw-bold">Accept Quotations Before:</h3>
+                                    <div class="mt-0">
+                                    <input type="date" class="date form-control" formControlName="date">
+                                    <small *ngIf="userForm.get('date').hasError('futureDate')" class="text-danger">*Please Select Future Date</small>
+                                    </div>
+
+                            <h3 for="name" class="form-label fw-bold mt-2">Select Category:</h3>
+                            <div class="mt-0">
+                              <select (change)="changevalue($event)" class="form-select" formControlName="category" name="category">
+                                <option selected [value] >Hardware Items</option>
+                                <option [value] >Tyres,Tubes and collars for Tyres</option>
+                                <option [value] >Stationsry Items</option>
+                                <option  [value]>A/C Machines</option>
+                              </select>
+                              <small *ngIf="userForm.get('category').hasError('invalidCate')" class="text-danger">*Category Selection is Reqired</small>
+                          </div>
+                        </form>
+                   
+                          <form [formGroup]="addItemsForm">
+                            <div formArrayName="item">
+                              <h3 class="mt-4 fw-bold">Enter Items:</h3>
+                              <div *ngFor="let child of addItemsForm.get('item')['controls']; let i=index" [formGroupName]="i">
+                                <div class="input-group mb-4">
+                                  <div class="col-4">
+                                    <input type="text" class="form-control" formControlName="item">
+                                    <small *ngIf="child.controls['item'].dirty && child.controls['item'].hasError('required')" class="text-danger">
+                                      *Item is Required
+                                    </small>
+                                  </div>
+                                  <div class="col-4 ms-2">
+                                    <input type="text" class="form-control" placeholder="Enter Quantity" formControlName="qty">
+                                    <small *ngIf="child.controls['qty'].hasError('invalidQty')" class="text-danger">
+                                      *Quantity is can't be a letter
+                                    </small>
+                                  </div>
+                                  <div class="row">
+                                    <div class="col-1">
+                                      <button class="btn btn-danger ms-3" (click)="removeItems(i)">
+                                        <i class="fa fa-minus-circle" aria-hidden="true"></i>
+                                      </button>
+                                    </div>
+                                    <div class="col-1">
+                                      <button class="btn btn-primary ms-5 mt-0" (click)="addItems(i)">
+                                        <i class="fa fa-plus-circle" aria-hidden="true"></i>
+                                      </button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+
+                          
+                        </div>
+                        <div class="row">
+                            <div class="row mt-4">
+                                <button type="submit" class="sub btn btn-success">Send order Request</button>
+                            </div>  
+                        </div>
+                        
+                                
+                    </div>
+                </div>
+             
+            </form>
+
+        </section>
+    </div>
+</div>

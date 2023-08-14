@@ -1,0 +1,11 @@
+.body{
+    /* width:calc(100% -20rem); */
+    height: 820px;
+    margin-left: 245px;
+    z-index: 0;
+    position: relative;
+    top: 0;
+    transition: all .5s ease;
+    background: #f4f7fa;
+    padding: 3rem;
+}

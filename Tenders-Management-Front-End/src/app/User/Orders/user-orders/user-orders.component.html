@@ -1,0 +1,36 @@
+<div class="card1">
+    <div class="card-header">
+            orders  
+            <div class="honeycomb">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+    </div>
+    <div class="card-body">
+        <ul>
+            <li class="list" *ngFor="let udata of detail">
+
+                <div class="card">
+                    <div class="first-content">
+                      <span>{{udata.name}}  </span>
+                    </div>
+                    <div class="second-content">
+                  <span>   <a class="nav-link" routerLink="/Uorder/{{udata.id}}" 
+                    routerLinkActive="active"    
+                    [routerLinkActiveOptions]="{exact:true}">
+                        <img class="img" src="{{udata.imageUrl}}" alt="">
+                        <div class="content">
+                                {{udata.name}}   
+                        </div>
+                    </a> </span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
